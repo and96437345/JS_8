@@ -75,15 +75,35 @@
 // Создайте объект класса ExtendedDate и выведите на экран
 // результаты работы новых методов.
 
+// class ExtendedDate extends Date{
+//     dateToText() {
+//         console.log(`${this.getDate()}.${this.getMonth()+1}.${this.getFullYear()}`);
+//     }
+//     verifyDate(day, month, year) {
+//         let date1 = new Date(year,(month-1),day);
+//         let dateNow = new Date();
+//         if (date1 >= dateNow) {
+//             return true;
+//         } else return false;
+//     }
+//     verifyLeapYear(year) {
+//         if ((year % 400) == 0 || (year % 4) == 0 && (year % 100) != 0) {
+//             return true;
+//         } else return false;
+//     }
+//     nextDate(day, month, year) {
+//         let nextDate = new Date(year,(month-1),day);
+//         nextDate.setDate(nextDate.getDate()+1);
+//         return (`${nextDate.getDate()}.${nextDate.getMonth()+1}.${nextDate.getFullYear()}`);
+//     }
+// }
 
+// let extendedDate1 = new ExtendedDate();
+// extendedDate1.dateToText();
 
-
-
-
-
-
-
-
+// console.log(extendedDate1.verifyDate(4,10,2023));
+// console.log(extendedDate1.verifyLeapYear(2020));
+// console.log(extendedDate1.nextDate(31,12,2022));
 
 
 
