@@ -116,13 +116,41 @@
 // Создать объект класса EmpTable и вывести на экран результат
 // работы метода getHtml().
 
+// class Employee {
+//     constructor(name, surName, yearOfBirth, speciality) {
+//     this.name = name;
+//     this.surName = surName;
+//     this.yearOfBirth = yearOfBirth;
+//     this.speciality = speciality;
+//     }
+// }
+// let worker1 = new Employee('Иван', 'Петров', 1996, 'Специалист по безопасности');
+// let worker2 = new Employee('Галина', 'Иванова', 1991, 'Бухгалтер');
+// let worker3 = new Employee('Мария', 'Потапова', 1988, 'Экономист');
+// let worker4 = new Employee('Александра', 'Михайлова', 1990, 'Кассир');
+// let arrayWorkers = [worker1, worker2, worker3, worker4];
 
-
-
-
-
-
-
+// class EmpTable {
+//     constructor(array) {
+//         this.array = array;
+//     }
+//     getHtml() {
+//         document.write(`<table  border="1" bordercolor="grey"> 
+//             <tr> 
+//             <th> Имя </th> 
+//             <th> Фамилия </th> 
+//             <th> Год рождения </th> 
+//             <th> Специальность </th> 
+//             </tr>`);
+//         this.array.forEach(i => {
+//             document.write(`<tr><td>${i.name}</td><td>${i.surName}</td><td>${i.yearOfBirth}</td><td>${i.speciality}</td></tr>`)
+//         });
+//         document.write(`
+//             </table>`)
+//     }
+// }
+// let empTableBank = new EmpTable(arrayWorkers);
+// empTableBank.getHtml();
 
 
 
@@ -134,3 +162,11 @@
 // метод getHtml() из родительского класса.
 // Создать объект класса StyledEmpTable и вывести на экран
 // результат работы метода getHtml().
+
+// class StyledEmpTable extends EmpTable {
+//     getStyles(tableStyles) {
+//         document.write(`<style>${tableStyles}</style>`);
+//     }
+// }
+
+// getStyles('color: red;');
